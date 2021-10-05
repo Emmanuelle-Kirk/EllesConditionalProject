@@ -61,6 +61,13 @@ namespace EllesConditionalProject
             Console.WriteLine("<3 <3 <3 <3 <3 <3");
             Console.WriteLine();
         }
+        static void WeaponPickup()
+        {
+            weapon = weapon + 1;
+
+            Console.WriteLine("You picked up a new weapon!");
+            Console.WriteLine();
+        }
         static void TakeDamage(int damage)
         {
             health = health - damage;
@@ -96,10 +103,23 @@ namespace EllesConditionalProject
 
             TakeDamage(50);
 
-            weapon = weapon + 1;
+            WeaponPickup();
 
-            Console.WriteLine("You picked up a new weapon!");
-            Console.WriteLine();
+            ShowHud();
+
+            WeaponPickup();
+
+            ShowHud();
+
+            WeaponPickup();
+
+            ShowHud();
+
+            WeaponPickup();
+
+            ShowHud();
+
+            WeaponPickup();
 
             ShowHud();
 
